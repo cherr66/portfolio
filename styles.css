@@ -86,8 +86,8 @@ pointer-events: none;
 }
 .panelMask {
   background: radial-gradient(
-    #f4f6f9 60%,
-    rgba(0, 0, 0, 0) 70%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(244, 246, 249, 0.9) 60%,
+    rgba(244, 246, 249, 0.8) 70%,
+    rgba(244, 246, 249, 0) 100%
   );   
 }

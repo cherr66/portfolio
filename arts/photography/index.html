@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" href="/favicon.ico" />
 </head>
-<body class="min-h-screen">
-  <div class="sticky top-0 z-50 py-6 pb-2" id="navbar"></div>
+<body class="min-h-screen px-4 md:px-0">
+  <div class="md:sticky top-0 z-50 py-6 pb-2" id="navbar"></div>
 
   <div class="max-w-5xl mx-auto">
     <nav class="text-gray-500 text-sm mb-8" aria-label="Breadcrumb">
@@ -25,15 +25,9 @@
     </nav>
     
 
-    <main>
-
-      <!-- <section>
-        <h2 class="text-xl font-semibold text-center">Photography Collection</h2>
-        <p class="text-center text-gray-600 mt-2">This is a selection of my best work. I hope you enjoy viewing these moments captured through my lens.</p>
-      </section> -->
-      
+    <main>     
       <section class="mt-20 max-w-6xl mx-auto" id="arts">
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4" id="dynamic-photo-gallery">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="dynamic-photo-gallery">
           <!-- 照片流由JS动态生成 -->
         </div>
       

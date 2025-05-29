@@ -34,10 +34,10 @@
   </style>
 </head>
 <body class="min-h-screen">
-  <div class="sticky top-0 z-50 py-6 pb-2" id="navbar"></div>
+  <div class="md:sticky top-0 z-50 py-6 pb-2 px-4 md:px-0" id="navbar"></div>
 
   <div>
-    <nav class="max-w-5xl mx-auto text-gray-500 text-sm mb-4" aria-label="Breadcrumb">
+    <nav class="max-w-5xl mx-auto text-gray-500 text-sm mb-4 px-4 md:px-0" aria-label="Breadcrumb">
       <ol class="list-reset flex">
         <li><span class="text-gray-700"> &gt;&nbsp; </span></li> 
         <li><a href="/" class="hover:text-gray-700">Portfolio</a></li>
@@ -47,8 +47,8 @@
     </nav>
 
     <main>
-      <section class="container max-w-5xl mx-auto pt-5 mb-12">
-        <div class="flex flex-nowrap mt-8 mb-6">
+      <section class="container max-w-5xl mx-auto pt-5 mb-12 px-4 md:px-0">
+        <div class="flex flex-nowrap flex-col md:flex-row mt-8 mb-6">
           <div class="w-full lg:w-2/3 lg:mb-0 text-lg pr-10">
             <p class="mb-6 text-justify">
               <strong>Heart of the Jungle</strong> is a 2D platformer, where player play the role as a little red panda to retrieve stolen items from the evil goblins.
@@ -63,12 +63,12 @@
             </p>
             </div>
 
-          <div class="w-full lg:w-1/3 pr-0 lg:pl-12 pl-12 lg:pr-12 pr-12 lg:pt-12 pt-12"> 
-            <img src="/Images/Portfolio/HeartoftheJungle/owl.png" alt="Wise owl">
+          <div class="w-full lg:w-1/3 pr-0 lg:pl-12 pl-12 lg:pr-12 pr-12 lg:pt-12 pt-2"> 
+            <img src="/Images/Portfolio/HeartoftheJungle/owl.png" alt="Wise owl" class="w-1/2 max-w-xs mx-auto md:w-full md:max-w-full">
           </div>          
         </div>
 
-        <div class="flex flex-nowrap mt-8 mb-6 ">
+        <div class="flex flex-nowrap flex-col md:flex-row mt-8 mb-6 ">
           <div class="w-full lg:w-1/3 lg:mb-0 text-lg pr-10">
             <div class="mb-6 space-y-1 text-lg text-gray-600 leading-relaxed">
               <p><strong>Type:</strong> School Project</p>
@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <div class="w-full lg:w-2/3 lg:pr-10 pr-10 lg:pl-12 pl-12"> 
+          <div class="w-full mx-auto md:w-2/3 lg:pr-10 pr-0 lg:pl-12 pl-0"> 
             <!-- 图片轮播 -->
             <div class="relative w-full" x-data="{ current: 0, images: ['/Images/Portfolio/HeartoftheJungle/2.jpg', '/Images/Portfolio/HeartoftheJungle/3.jpg', '/Images/Portfolio/HeartoftheJungle/4.jpg', '/Images/Portfolio/HeartoftheJungle/5.jpg', '/Images/Portfolio/HeartoftheJungle/6.jpg'] }">
               <div class="overflow-hidden">
@@ -113,7 +113,7 @@
           </div>          
         </div>
 
-        <div class="flex flex-col max-w-5xl mx-auto justify-end h-24 -mt-8">
+        <div class="flex flex-col max-w-5xl mx-auto justify-end h-24 mt-36 md:-mt-8">
           <h1 class="text-2xl font-extrabold mb-3">Responsibility</h1>
           <p class="mb-4 text-justify text-lg">
             In a team of four, I was primarily responsible for creating most of the art assets, including environment art and character animations. Besides, I served as tech support throughout development, working on UI functionality, testing, and bug fixes.
@@ -127,14 +127,17 @@
       <div class="bg-white pt-36 pb-24 mt-12 mx-auto relative">
         <canvas id="particles"></canvas>
 
-        <div class="relative w-full max-w-5xl mx-auto" style="height: 576px; overflow: hidden;">
-          <iframe class="absolute top-0 left-0 w-full h-full" 
-            src="https://www.youtube.com/embed/FUBgf1G6Z7s" 
-            title="Crazy Eight - Gameplay Clip" frameborder="0" 
-            style="border: none;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div class="px-4 md:px-0 max-w-5xl mx-auto">
+          <div class="relative w-full" style="padding-top: 56.25%;">
+            <iframe class="absolute top-0 left-0 w-full h-full" 
+              src="https://www.youtube.com/embed/FUBgf1G6Z7s" 
+              title="Crazy Eight - Gameplay Clip" frameborder="0" 
+              style="border: none;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </div>
+
         
         <div class="flex justify-center mt-16 z-50">
           <a href="https://drive.google.com/file/d/1WyQDkfvdH39YMBvOjqIc8gUz3ygScaBc/view?usp=drive_link" target="_blank"
