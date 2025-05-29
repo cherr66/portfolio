@@ -1,8 +1,6 @@
 const isGithubHost = window.location.origin.includes('github.io');
 const repositoryName = window.location.pathname.split('/').filter(Boolean)[0];
 
-// updateURLs();
-
 window.addEventListener('DOMContentLoaded', () => {
   const navbarUrl = (isGithubHost ? window.location.origin + '/' + repositoryName : '') + '/navbar.html?' + new Date().getTime();
 
@@ -10,6 +8,26 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(response => response.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
+
+      const menuToggle = document.getElementById("menuToggle");
+      const mainNav = document.getElementById("mainNav");
+      const artsToggle = document.getElementById("artsToggle");
+      const artsSubMenu = document.getElementById("artsSubMenu");
+      const arrow = document.getElementById("artsArrow");
+      let menuOpen = false;
+      let artsOpen = false;
+
+      menuToggle.addEventListener("click", () => {
+        menuOpen = !menuOpen;
+        mainNav.classList.toggle("hidden", !menuOpen);
+        menuToggle.innerHTML = menuOpen ? "&times;" : "&#9776;";
+      });
+
+      artsToggle.addEventListener("click", () => {
+        artsOpen = !artsOpen;
+        artsSubMenu.classList.toggle("hidden", !artsOpen);
+        arrow.innerHTML = artsOpen ? "&#9652;" : "&#9662;"; // ▲ ▼
+      });
     })
     .then(updateURLs)
     .then(setNavigationBarActive)
@@ -311,3 +329,5 @@ function openLightbox(src) {
     lightbox.classList.add('hidden');
   });
 }
+
+

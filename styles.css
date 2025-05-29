@@ -28,6 +28,7 @@ nav ul li a.active {
 background: linear-gradient(180deg, #a7b1c0, #1f2937);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+display: inline-block; 
 }
 nav ul li a.active::after {
 content: "";
@@ -44,6 +45,12 @@ font-size: 16px;
 font-weight: normal;
 color: #333;
 transition: background-color 0.3s ease;
+}
+#artsToggle {
+  color: #6c7481;
+}
+#artsToggle:hover {
+  color: #1f2937;
 }
 
 .project-card {
