@@ -69,7 +69,7 @@
         
           <!-- 图片轮播 -->
           <div class="w-full lg:w-1/2 flex flex-col bg-white/80 shadow-lg backdrop-blur-sm border border-gray-300 rounded-xl overflow-hidden">
-            <div class="relative w-full aspect-video" x-data="{ current: 0, images: ['/portfolio/Images/Crazy8/1.jpg', '/portfolio/Images/Crazy8/2.jpg'] }">
+            <div class="relative w-full aspect-video" x-data="{ current: 0, images: ['/portfolio/Images/Portfolio/Crazy8/1.jpg', '/portfolio/Images/Portfolio/Crazy8/2.jpg'] }">
               <div class="overflow-hidden w-full h-full">
                 <template x-for="(image, index) in images" :key="index">
                   <img :src="image" x-show="current === index" class="w-full h-full object-cover transition-all duration-500">
