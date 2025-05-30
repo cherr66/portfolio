@@ -90,7 +90,6 @@ function updateURLs(){
 function setNavigationBarActive(){
   const pathParts = window.location.pathname.split('/').filter(Boolean);
   const currentPage = pathParts[pathParts.length - 1]?.toLowerCase() || '';
-  console.log("currentPage " + currentPage);
   if(pathParts.length <= 0 || (isGithubHost && currentPage === repositoryName)) {
     document.getElementById('home').classList.add('active');
     return;
@@ -117,13 +116,10 @@ function setNavigationBarActive(){
   if (!matched) {
       navLinks.forEach(link => {
         let linkHref = link.getAttribute('href');
-        console.log("linkHref " + linkHref);
 
         if(isGithubHost){
-          linkHref = linkHref.replace(window.location.origin + '/' + repositoryName, '');
+          linkHref = linkHref.replace('/portfolio/', '');
         }
-        linkHref = linkHref.substring(1);
-        console.log("linkHref " + linkHref);
 
         if (linkHref === currentPage) {
             link.classList.add('active');
