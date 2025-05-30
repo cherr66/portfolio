@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
         arrow.innerHTML = artsOpen ? "&#9652;" : "&#9662;"; // ▲ ▼
       });
     })
-    .then(updateURLs)
+    // .then(updateURLs)
     .then(setNavigationBarActive)
     .then(setUpNavigationBarDropDown)
     .then(setUpBackToTopBtn)
@@ -38,11 +38,11 @@ window.addEventListener('DOMContentLoaded', () => {
       if(pathParts.length <= 0) return;
       const currentPage = pathParts[pathParts.length - 1].toLowerCase();
       if (currentPage === "photography") {
-        if(isGithubHost){
-          photographyPhotos.forEach((element, index, array) => {
-            array[index] = element.replace('/Images', `/${repositoryName}/Images`);
-          });
-        }
+        // if(isGithubHost){
+        //   photographyPhotos.forEach((element, index, array) => {
+        //     array[index] = element.replace('/Images', `/${repositoryName}/Images`);
+        //   });
+        // }
         setupDynamicGallery(photographyPhotos);
       }else if (["illustration", "crazy8", "unleashedlove", "heartofthejungle", "arcards", "acedemo", "goswim"].includes(currentPage)) {
         const images = document.querySelectorAll('img');
@@ -206,31 +206,31 @@ function setUpBackToTopBtn(){
 }
 
 const photographyPhotos = [
-  '/Images/Photography/1.jpg',
-  '/Images/Photography/2.jpg',
-  '/Images/Photography/3.jpg',
-  '/Images/Photography/4.jpg',
-  '/Images/Photography/5.jpg',
-  '/Images/Photography/6.jpg',
-  '/Images/Photography/7.jpg',
-  '/Images/Photography/8.jpg',
-  '/Images/Photography/9.jpg',
-  '/Images/Photography/10.jpg',
-  '/Images/Photography/11.jpg',
-  '/Images/Photography/12.jpg',
-  '/Images/Photography/13.jpg',
-  '/Images/Photography/14.jpg',
-  '/Images/Photography/15.jpg',
-  '/Images/Photography/16.jpg',
-  '/Images/Photography/17.jpg',
-  '/Images/Photography/18.jpg',
-  '/Images/Photography/19.jpg',
-  '/Images/Photography/20.jpg',
-  '/Images/Photography/21.jpg',
-  '/Images/Photography/22.jpg',
-  '/Images/Photography/23.jpg',
-  '/Images/Photography/24.jpg',
-  '/Images/Photography/25.jpg',
+  '/portfolio/Images/Photography/1.jpg',
+  '/portfolio/Images/Photography/2.jpg',
+  '/portfolio/Images/Photography/3.jpg',
+  '/portfolio/Images/Photography/4.jpg',
+  '/portfolio/Images/Photography/5.jpg',
+  '/portfolio/Images/Photography/6.jpg',
+  '/portfolio/Images/Photography/7.jpg',
+  '/portfolio/Images/Photography/8.jpg',
+  '/portfolio/Images/Photography/9.jpg',
+  '/portfolio/Images/Photography/10.jpg',
+  '/portfolio/Images/Photography/11.jpg',
+  '/portfolio/Images/Photography/12.jpg',
+  '/portfolio/Images/Photography/13.jpg',
+  '/portfolio/Images/Photography/14.jpg',
+  '/portfolio/Images/Photography/15.jpg',
+  '/portfolio/Images/Photography/16.jpg',
+  '/portfolio/Images/Photography/17.jpg',
+  '/portfolio/Images/Photography/18.jpg',
+  '/portfolio/Images/Photography/19.jpg',
+  '/portfolio/Images/Photography/20.jpg',
+  '/portfolio/Images/Photography/21.jpg',
+  '/portfolio/Images/Photography/22.jpg',
+  '/portfolio/Images/Photography/23.jpg',
+  '/portfolio/Images/Photography/24.jpg',
+  '/portfolio/Images/Photography/25.jpg',
 ];
 
 let loadedCount = 0;
