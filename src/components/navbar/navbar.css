@@ -1,0 +1,49 @@
+#navbar {
+  background: #f4f6f9;
+}
+
+nav ul li a {
+  background: #6c7481;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul li a:hover {
+  background: #1f2937;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul li a.active {
+  background: linear-gradient(180deg, #a7b1c0, #1f2937);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+nav ul li a.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #686d74;
+  border-radius: 9999px;
+}
+
+#artsDropdown li a {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+#artsDropdown li a.active::after {
+  height: 1px;
+  background: #797d83;
+}
+#artsToggle {
+  color: #6c7481;
+}
+#artsToggle:hover {
+  color: #1f2937;
+}
