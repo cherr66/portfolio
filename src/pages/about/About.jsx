@@ -3,12 +3,12 @@ import Background from "../../components/background/Background";
 const About = () => {
   return (
     <>
-      <Background imgUrl={"../src/assets/photography//7.jpg"} />
+      <Background imgUrl={"./images/photography/7.jpg"} />
       <section className="max-w-5xl mx-auto mt-8 py-2 md:mt-26 md:py-20 px-4 lg:px-0">
         <div className="flex flex-col md:flex-row items-center py-2 md:py-20">
           <div className="w-full md:w-1/3 lg:pr-4 pr-4">
             <img
-              src="/images/portrait/1.jpg"
+              src="./images/portrait/1.jpg"
               alt="Portrait"
               className="rounded-lg shadow-lg w-full h-auto object-cover"
             />

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Breadcrumbs from "../../../../components/breadcrumbs/Breadcrumbs";
 import Lightbox from "../../../../components/lightbox/Lightbox";
+const NUM_PHOTOS = 25;
 
 const Photography = () => {
   const batchSize = 9;
@@ -15,12 +16,11 @@ const Photography = () => {
   const [lightboxSrc, setLightboxSrc] = useState(null);
 
   const getPhotos = () => {
-    const modules = import.meta.glob("/src/assets/photography/*.{jpg,png}", {
-      eager: true,
-    });
-    return Object.values(modules)
-      .map((m) => m.default)
-      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    const urls = [];
+    for (let i = 1; i <= NUM_PHOTOS; i++) {
+      urls.push(`/portfolio/images/photography/${i}.jpg`);
+    }
+    return urls;
   };
 
   const assignImagesToColumns = (images) => {

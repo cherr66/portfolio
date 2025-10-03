@@ -3,6 +3,9 @@ import Breadcrumbs from "../../../../components/breadcrumbs/Breadcrumbs";
 import Particles from "../../../../components/particles/Particles";
 import Lightbox from "../../../../components/lightbox/Lightbox";
 import styles from "./acedemo.module.css";
+import userInterfaceImg from "/images/portfolio/ace_demo/user interface.jpg";
+import withGameImg from "/images/portfolio/ace_demo/with game.jpg";
+import highlightFeatureImg from "/images/portfolio/ace_demo/highlight feature.jpg";
 
 const AceDemo = () => {
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -115,14 +118,10 @@ const AceDemo = () => {
               <div className="w-full lg:w-1/2 lg:mb-0 text-lg">
                 <figure className="mb-6">
                   <img
-                    src="/images/portfolio/ace_demo/user interface.jpg"
+                    src={userInterfaceImg}
                     alt="User Interface"
                     className="rounded-lg shadow-md mb-2 cursor-pointer"
-                    onClick={() =>
-                      setLightboxSrc(
-                        "/images/portfolio/ace_demo/user interface.jpg"
-                      )
-                    }
+                    onClick={() => setLightboxSrc(userInterfaceImg)}
                   />
                   <figcaption className="text-center text-gray-500 text-sm">
                     User Interface
@@ -143,12 +142,10 @@ const AceDemo = () => {
             <div className="w-full lg:w-1/2 lg:mb-0 text-lg lg:pr-4 pr-0">
               <figure className="mb-6">
                 <img
-                  src="/images/portfolio/ace_demo/with game.jpg"
+                  src={withGameImg}
                   alt="Use with a HTML5 Game"
                   className="rounded-lg shadow-md mb-2 cursor-pointer"
-                  onClick={() =>
-                    setLightboxSrc("/images/portfolio/ace_demo/with game.jpg")
-                  }
+                  onClick={() => setLightboxSrc(withGameImg)}
                 />
                 <figcaption className="text-center text-gray-500 text-sm">
                   Use with a HTML5 Game
@@ -158,14 +155,10 @@ const AceDemo = () => {
             <div className="w-full lg:w-1/2 lg:mb-0 text-lg lg:pl-4 pl-0">
               <figure className="mb-6">
                 <img
-                  src="/images/portfolio/ace_demo/highlight feature.jpg"
+                  src={highlightFeatureImg}
                   alt="Highlight Feature"
                   className="rounded-lg shadow-md mb-2 cursor-pointer"
-                  onClick={() =>
-                    setLightboxSrc(
-                      "/images/portfolio/ace_demo/highlight feature.jpg"
-                    )
-                  }
+                  onClick={() => setLightboxSrc(highlightFeatureImg)}
                 />
                 <figcaption className="text-center text-gray-500 text-sm">
                   Highlight Feature

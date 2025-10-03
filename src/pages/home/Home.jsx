@@ -1,11 +1,12 @@
-import React from "react";
 import { homePageProjects } from "../../dummyData";
 import Background from "../../components/background/Background";
+import BackgroundImage from "/images/photography/16.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <Background imgUrl={"../src/assets/photography//16.jpg"} />
+      <Background imgUrl={BackgroundImage} />
       <header className="mt-20 mb-12 px-4 lg:px-0">
         <div className="flex items-center justify-center">
           <img
@@ -35,9 +36,9 @@ const Home = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto py-8 mb-16 px-4 lg:px-0">
         {homePageProjects.map((project, idx) => (
-          <a
+          <Link
             key={idx}
-            href={project.href}
+            to={project.href}
             className="relative overflow-hidden rounded-xl shadow-lg group transform transition-all duration-300"
             style={{ aspectRatio: "4 / 3" }}
           >
@@ -55,7 +56,7 @@ const Home = () => {
                 <p className="text-base">{project.description}</p>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </>

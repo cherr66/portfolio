@@ -6,6 +6,17 @@ import VideoPlayer from "../../../../components/videoPlayer/VideoPlayer";
 import ImageCarousel from "../../../../components/imageCarousel/ImageCarousel";
 import Lightbox from "../../../../components/lightbox/Lightbox";
 import styles from "./goswim.module.css";
+import goswim_bg from "/images/portfolio/goswim/bg.jpg";
+import swim_ring from "/images/portfolio/goswim/swim ring.png";
+import mosaic_tiles from "/images/portfolio/goswim/mosaic tiles.jpg";
+import pool_scene from "/images/portfolio/goswim/process/pool scene in blender.jpg";
+import animate_character from "/images/portfolio/goswim/process/animate character.jpg";
+import material_mask from "/images/portfolio/goswim/process/material mask.png";
+import screenshot1 from "/images/portfolio/goswim/screenshot1.png";
+import screenshot2 from "/images/portfolio/goswim/screenshot2.png";
+import screenshot3 from "/images/portfolio/goswim/screenshot3.png";
+import screenshot4 from "/images/portfolio/goswim/screenshot4.png";
+import screenshot5 from "/images/portfolio/goswim/screenshot5.png";
 
 const GoSwim = () => {
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -14,7 +25,7 @@ const GoSwim = () => {
 
   return (
     <>
-      <Background imgUrl={"/images/portfolio/goswim/bg.jpg"} clear={true} />
+      <Background imgUrl={goswim_bg} clear={true} />
       <Breadcrumbs
         items={[
           { link: "/", title: "Portfolio" },
@@ -100,11 +111,7 @@ const GoSwim = () => {
 
             <div className="w-full md:w-1/2 md:mb-0 text-lg md:pl-10 pl-0">
               <figure className="mt-8 md:mt-36 md:mb-8 md:-ml-2">
-                <img
-                  src="/images/portfolio/goswim/swim ring.png"
-                  data-ignore="true"
-                  className="w-1/2"
-                />
+                <img src={swim_ring} data-ignore="true" className="w-1/2" />
               </figure>
 
               <div className="mb-4 px-2">
@@ -128,11 +135,7 @@ const GoSwim = () => {
         </section>
 
         <section className={styles.bg_cyan}>
-          <img
-            src="/images/portfolio/goswim/mosaic tiles.jpg"
-            data-ignore="true"
-            className="w-full"
-          />
+          <img src={mosaic_tiles} data-ignore="true" className="w-full" />
 
           <div className="relative mt-28 mb-6 max-w-5xl mx-auto  px-4 md:px-0">
             <h1 className="text-2xl font-extrabold mb-6">Development</h1>
@@ -204,14 +207,10 @@ const GoSwim = () => {
                 <div className="w-full lg:w-1/3 lg:mb-0 mt-6 md:mt-0 text-lg section1-full">
                   <figure className="mb-6">
                     <img
-                      src="/images/portfolio/goswim/process/pool scene in blender.jpg"
+                      src={pool_scene}
                       alt="Pool scene in blender"
                       className="rounded-lg shadow-md mb-2 cursor-pointer"
-                      onClick={() =>
-                        setLightboxSrc(
-                          "/images/portfolio/goswim/process/pool scene in blender.jpg"
-                        )
-                      }
+                      onClick={() => setLightboxSrc(pool_scene)}
                     />
                     <figcaption className="text-center text-gray-500 text-sm">
                       Pool scene in blender
@@ -219,14 +218,10 @@ const GoSwim = () => {
                   </figure>
                   <figure className="mb-6">
                     <img
-                      src="/images/portfolio/goswim/process/animate character.jpg"
+                      src={animate_character}
                       alt="Animate character"
                       className="rounded-lg shadow-md mb-2 cursor-pointer"
-                      onClick={() =>
-                        setLightboxSrc(
-                          "/images/portfolio/goswim/process/animate character.jpg"
-                        )
-                      }
+                      onClick={() => setLightboxSrc(animate_character)}
                     />
                     <figcaption className="text-center text-gray-500 text-sm">
                       Animate character
@@ -269,14 +264,10 @@ const GoSwim = () => {
                   </h2>
                   <figure className="w-full md:w-1/3 float-right px-8 py-4 md:block">
                     <img
-                      src="/images/portfolio/goswim/process/material mask.png"
+                      src={material_mask}
                       alt="A material mask separating bikini from body part"
                       className="rounded-lg shadow-md mb-2 cursor-pointer"
-                      onClick={() =>
-                        setLightboxSrc(
-                          "/images/portfolio/goswim/process/material mask.png"
-                        )
-                      }
+                      onClick={() => setLightboxSrc(material_mask)}
                     />
                     <figcaption className="text-center text-gray-500 text-sm">
                       A material mask separating bikini from body part
@@ -305,14 +296,10 @@ const GoSwim = () => {
                   </p>
                   <figure className="w-full md:w-1/3 float-right px-8 py-4 md:hidden">
                     <img
-                      src="/images/portfolio/goswim/process/material mask.png"
+                      src={material_mask}
                       alt="A material mask separating bikini from body part"
                       className="rounded-lg shadow-md mb-2 cursor-pointer"
-                      onClick={() =>
-                        setLightboxSrc(
-                          "/images/portfolio/goswim/process/material mask.png"
-                        )
-                      }
+                      onClick={() => setLightboxSrc(material_mask)}
                     />
                     <figcaption className="text-center text-gray-500 text-sm">
                       A material mask separating bikini from body part
@@ -377,11 +364,11 @@ const GoSwim = () => {
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <ImageCarousel
               urls={[
-                "/images/portfolio/goswim/screenshot1.png",
-                "/images/portfolio/goswim/screenshot2.png",
-                "/images/portfolio/goswim/screenshot3.png",
-                "/images/portfolio/goswim/screenshot4.png",
-                "/images/portfolio/goswim/screenshot5.png",
+                screenshot1,
+                screenshot2,
+                screenshot3,
+                screenshot4,
+                screenshot5,
               ]}
             />
 

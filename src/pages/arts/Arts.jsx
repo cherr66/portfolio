@@ -8,7 +8,7 @@ const Arts = () => {
 
   return (
     <>
-      <Background imgUrl={"../src/assets/photography//17.jpg"} />
+      <Background imgUrl={"./images/photography/17.jpg"} />
 
       <header className="mt-28 mb-12">
         <h1 className="text-2xl text-center font-semibold mb-2">Quick Nav</h1>

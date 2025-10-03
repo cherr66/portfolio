@@ -4,10 +4,17 @@ import ImageCarousel from "../../../../components/imageCarousel/ImageCarousel";
 import VideoPlayer from "../../../../components/videoPlayer/VideoPlayer";
 import Particles from "../../../../components/particles/Particles";
 
+import ul_bg from "/images/portfolio/unleashed_love/bg.png";
+import ul_1 from "/images/portfolio/unleashed_love/1.jpg";
+import ul_2 from "/images/portfolio/unleashed_love/2.jpg";
+import ul_3 from "/images/portfolio/unleashed_love/3.jpg";
+import ul_4 from "/images/portfolio/unleashed_love/4.jpg";
+import ul_5 from "/images/portfolio/unleashed_love/5.jpg";
+
 const UnleashedLove = () => {
   return (
     <>
-      <Background imgUrl={"/images/portfolio/unleashed_love/bg.png"} />
+      <Background imgUrl={ul_bg} />
       <Breadcrumbs
         items={[
           { link: "/", title: "Portfolio" },
@@ -70,15 +77,7 @@ const UnleashedLove = () => {
       </div>
 
       <div className="max-w-2xl mx-auto mb-8 mt-6 px-4 lg:px-0">
-        <ImageCarousel
-          urls={[
-            "/images/portfolio/unleashed_love/1.jpg",
-            "/images/portfolio/unleashed_love/2.jpg",
-            "/images/portfolio/unleashed_love/3.jpg",
-            "/images/portfolio/unleashed_love/4.jpg",
-            "/images/portfolio/unleashed_love/5.jpg",
-          ]}
-        />
+        <ImageCarousel urls={[ul_1, ul_2, ul_3, ul_4, ul_5]} />
       </div>
 
       <div className="bg-white pt-24 pb-36 lg:pt-36 lg:pb-48 mt-12 mx-auto relative">

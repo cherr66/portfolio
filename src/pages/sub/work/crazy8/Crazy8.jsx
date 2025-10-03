@@ -3,6 +3,8 @@ import Breadcrumbs from "../../../../components/breadcrumbs/Breadcrumbs";
 import ImageCarousel from "../../../../components/imageCarousel/ImageCarousel";
 import VideoPlayer from "../../../../components/videoPlayer/VideoPlayer";
 import Particles from "../../../../components/particles/Particles";
+import crazy8_1 from "/images/portfolio/crazy8/1.jpg";
+import crazy8_2 from "/images/portfolio/crazy8/2.jpg";
 
 const Crazy8 = () => {
   return (
@@ -97,12 +99,7 @@ const Crazy8 = () => {
           </div>
 
           <div className="w-full lg:w-1/2 flex flex-col bg-white/80 shadow-lg backdrop-blur-sm border border-gray-300 rounded-xl overflow-hidden">
-            <ImageCarousel
-              urls={[
-                "/images/portfolio/crazy8/1.jpg",
-                "/images/portfolio/crazy8/2.jpg",
-              ]}
-            />
+            <ImageCarousel urls={[crazy8_1, crazy8_2]} />
           </div>
         </div>
       </section>

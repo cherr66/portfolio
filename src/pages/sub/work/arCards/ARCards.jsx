@@ -2,6 +2,10 @@ import Breadcrumbs from "../../../../components/breadcrumbs/Breadcrumbs";
 import ImageCarousel from "../../../../components/imageCarousel/ImageCarousel";
 import VideoPlayer from "../../../../components/videoPlayer/VideoPlayer";
 import styles from "./arCards.module.css";
+import arCard1 from "/images/portfolio/ar_cards/1.jpg";
+import arCard2 from "/images/portfolio/ar_cards/2.jpg";
+import arCard3 from "/images/portfolio/ar_cards/3.jpg";
+import arCard4 from "/images/portfolio/ar_cards/4.jpg";
 
 const ARCards = () => {
   return (
@@ -65,22 +69,13 @@ const ARCards = () => {
             </div>
 
             <div className="w-full lg:w-2/3 pr-0 lg:pl-16 pl-0">
-              {/* 视频播放 */}
               <VideoPlayer
                 url={"https://www.youtube.com/embed/9dov0TzOGVg"}
                 title={"AR Cards - Gameplay Clip"}
               />
 
-              {/* 图片轮播 */}
               <div className="mt-6">
-                <ImageCarousel
-                  urls={[
-                    "/images/portfolio/ar_cards/1.jpg",
-                    "/images/portfolio/ar_cards/2.jpg",
-                    "/images/portfolio/ar_cards/3.jpg",
-                    "/images/portfolio/ar_cards/4.jpg",
-                  ]}
-                />
+                <ImageCarousel urls={[arCard1, arCard2, arCard3, arCard4]} />
               </div>
             </div>
           </div>

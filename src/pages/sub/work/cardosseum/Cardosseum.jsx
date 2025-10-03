@@ -3,11 +3,17 @@ import Breadcrumbs from "../../../../components/breadcrumbs/Breadcrumbs";
 import Particles from "../../../../components/particles/Particles";
 import VideoPlayer from "../../../../components/videoPlayer/VideoPlayer";
 import ImageCarousel from "../../../../components/imageCarousel/ImageCarousel";
+import bgCardosseum from "/images/portfolio/cardosseum/bg.jpg";
+import card2 from "/images/portfolio/cardosseum/2.jpg";
+import card3 from "/images/portfolio/cardosseum/3.jpg";
+import card4 from "/images/portfolio/cardosseum/4.jpg";
+import card5 from "/images/portfolio/cardosseum/5.jpg";
+import card6 from "/images/portfolio/cardosseum/6.jpg";
 
 const Cardosseum = () => {
   return (
     <>
-      <Background imgUrl={"/images/portfolio/cardosseum/bg.jpg"} />
+      <Background imgUrl={bgCardosseum} />
       <Breadcrumbs
         items={[
           { link: "/", title: "Portfolio" },
@@ -90,15 +96,9 @@ const Cardosseum = () => {
             control.
           </p>
 
-          <ImageCarousel
-            urls={[
-              "/images/portfolio/cardosseum/2.jpg",
-              "/images/portfolio/cardosseum/3.jpg",
-              "/images/portfolio/cardosseum/4.jpg",
-              "/images/portfolio/cardosseum/5.jpg",
-              "/images/portfolio/cardosseum/6.jpg",
-            ]}
-          />
+          <div className="max-w-3xl mx-auto mt-10">
+            <ImageCarousel urls={[card2, card3, card4, card5, card6]} />
+          </div>
         </section>
 
         <div className="bg-white pt-36 pb-24 mt-12 mx-auto relative">

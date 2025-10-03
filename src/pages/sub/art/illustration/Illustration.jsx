@@ -2,6 +2,33 @@ import { useState, useEffect } from "react";
 import Breadcrumbs from "../../../../components/breadcrumbs/Breadcrumbs";
 import Lightbox from "../../../../components/lightbox/Lightbox";
 
+import endlessGreen from "/images/illustrations/22/endless green.jpg";
+import sheSmiles from "/images/illustrations/22/she smiles amidst the blossoms.jpg";
+import zen from "/images/illustrations/22/zen.jpg";
+import whitePeony from "/images/illustrations/22/white peony.jpg";
+import silentRebellion from "/images/illustrations/22/silent rebellion.jpg";
+import heidi1 from "/images/illustrations/21/heidi1.png";
+import heidi2 from "/images/illustrations/21/heidi2.png";
+import heidi3 from "/images/illustrations/21/heidi3.png";
+import gift from "/images/illustrations/21/gift.png";
+import bloomingDroplet from "/images/illustrations/21/blooming droplet.png";
+import fishStars from "/images/illustrations/21/fish stars.png";
+import procrastination from "/images/illustrations/21/procrastination.png";
+import lastSunset from "/images/illustrations/21/last sunset.png";
+import anime1 from "/images/illustrations/20/anime1.png";
+import anime2 from "/images/illustrations/20/anime2.png";
+import anime3 from "/images/illustrations/20/anime3.png";
+import anime4 from "/images/illustrations/20/anime4.png";
+import anime5 from "/images/illustrations/20/anime5.png";
+import anime6 from "/images/illustrations/20/anime6.png";
+import misc1 from "/images/illustrations/20/misc1.png";
+import misc2 from "/images/illustrations/20/misc2.png";
+import misc3 from "/images/illustrations/20/misc3.png";
+import misc4 from "/images/illustrations/20/misc4.png";
+import misc5 from "/images/illustrations/20/misc5.png";
+import misc6 from "/images/illustrations/20/misc6.png";
+import misc7 from "/images/illustrations/20/misc7.png";
+
 const Illustration = () => {
   const [lightboxSrc, setLightboxSrc] = useState(null);
 
@@ -24,7 +51,7 @@ const Illustration = () => {
       />
 
       <main>
-        {/* Part 1 */}
+        {/* Part 1 Portrait Illustrations */}
         <div className="max-w-5xl mx-auto pt-8 pb-28 px-4 md:px-0">
           <section className="text-center py-8">
             <h2 className="text-2xl font-semibold mb-2">
@@ -36,7 +63,7 @@ const Illustration = () => {
           <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/22/endless green.jpg"
+                src={endlessGreen}
                 alt="Endless Green"
                 className="w-full object-cover rounded-lg cursor-pointer shadow-md"
                 style={{ maxHeight: "650px" }}
@@ -47,7 +74,7 @@ const Illustration = () => {
             </figure>
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/22/she smiles amidst the blossoms.jpg"
+                src={sheSmiles}
                 alt="She Smiles Amidst the Blossoms"
                 className="w-full object-cover rounded-lg cursor-pointer shadow-md"
                 style={{ maxHeight: "650px" }}
@@ -61,7 +88,7 @@ const Illustration = () => {
           <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <figure className="flex flex-col items-center md:row-span-2">
               <img
-                src="/images/illustrations/22/zen.jpg"
+                src={zen}
                 alt="Zen"
                 id="photo-zen"
                 className="w-full max-h-[900px] object-contain rounded-lg cursor-pointer shadow-md"
@@ -72,7 +99,7 @@ const Illustration = () => {
             </figure>
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/22/white peony.jpg"
+                src={whitePeony}
                 alt="White Peony"
                 className="w-full max-h-[450px] object-contain rounded-lg cursor-pointer shadow-md"
               />
@@ -82,7 +109,7 @@ const Illustration = () => {
             </figure>
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/22/silent rebellion.jpg"
+                src={silentRebellion}
                 alt="Silent Rebellion"
                 className="w-full max-h-[450px] object-contain rounded-lg cursor-pointer shadow-md"
               />
@@ -103,14 +130,14 @@ const Illustration = () => {
           <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3">
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/21/heidi1.png"
+                src={heidi1}
                 alt="Heidi 1"
                 className="w-full max-h-[900px] object-contain cursor-pointer"
               />
             </figure>
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/21/heidi2.png"
+                src={heidi2}
                 alt="Heidi 2"
                 id="photo-heidi"
                 className="w-full max-h-[900px] object-contain cursor-pointer"
@@ -118,7 +145,7 @@ const Illustration = () => {
             </figure>
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/21/heidi3.png"
+                src={heidi3}
                 alt="Heidi 3"
                 className="w-full max-h-[900px] object-contain cursor-pointer"
               />
@@ -139,7 +166,7 @@ const Illustration = () => {
               style={{ flex: "1 1 45%" }}
             >
               <img
-                src="/images/illustrations/21/gift.png"
+                src={gift}
                 alt="Gift"
                 id="photo-gift"
                 className="max-h-96 object-contain rounded-lg cursor-pointer shadow-md"
@@ -153,7 +180,7 @@ const Illustration = () => {
               style={{ flex: "1 1 55%" }}
             >
               <img
-                src="/images/illustrations/21/blooming droplet.png"
+                src={bloomingDroplet}
                 alt="Blooming Droplet"
                 className="max-h-96 object-contain rounded-lg cursor-pointer shadow-md"
               />
@@ -169,7 +196,7 @@ const Illustration = () => {
               style={{ flex: "1 1 65%" }}
             >
               <img
-                src="/images/illustrations/21/fish stars.png"
+                src={fishStars}
                 alt="Stargathering"
                 className="w-full max-h-128 object-contain rounded-lg cursor-pointer shadow-md"
               />
@@ -180,7 +207,7 @@ const Illustration = () => {
             <div className="flex flex-col gap-8" style={{ flex: "1 1 35%" }}>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/21/procrastination.png"
+                  src={procrastination}
                   alt="Procrastination"
                   className="w-full max-h-48 object-contain rounded-lg cursor-pointer shadow-md"
                 />
@@ -190,7 +217,7 @@ const Illustration = () => {
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/21/last sunset.png"
+                  src={lastSunset}
                   alt="Sunset"
                   className="w-full max-h-48 object-contain rounded-lg cursor-pointer shadow-md"
                 />
@@ -212,7 +239,7 @@ const Illustration = () => {
           <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-0">
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/20/anime1.png"
+                src={anime1}
                 alt="Anime-Style 1"
                 className="w-full max-h-[900px] object-cover rounded-lg cursor-pointer shadow-md"
               />
@@ -221,14 +248,14 @@ const Illustration = () => {
             <div className="flex flex-col gap-8">
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/anime2.png"
+                  src={anime2}
                   alt="Anime-Style 2"
                   className="w-full h-72 object-cover rounded-lg cursor-pointer shadow-md"
                 />
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/anime3.png"
+                  src={anime3}
                   alt="Anime-Style 3"
                   className="w-full h-72 object-cover rounded-lg cursor-pointer shadow-md"
                 />
@@ -238,14 +265,14 @@ const Illustration = () => {
             <div className="flex flex-col gap-8">
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/anime4.png"
+                  src={anime4}
                   alt="Anime-Style 4"
                   className="w-full h-72 object-cover rounded-lg cursor-pointer shadow-md"
                 />
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/anime5.png"
+                  src={anime5}
                   alt="Anime-Style 5"
                   id="photo-anime"
                   className="w-full h-72 object-cover rounded-lg cursor-pointer shadow-md"
@@ -255,7 +282,7 @@ const Illustration = () => {
 
             <figure className="flex flex-col items-center">
               <img
-                src="/images/illustrations/20/anime6.png"
+                src={anime6}
                 alt="Anime-Style 6"
                 className="w-full max-h-[900px] object-cover rounded-lg cursor-pointer shadow-md"
               />
@@ -274,14 +301,14 @@ const Illustration = () => {
             <div className="flex flex-col gap-8">
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc1.png"
+                  src={misc1}
                   alt="Misc 1"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
                 />
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc4.png"
+                  src={misc4}
                   alt="Misc 2"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
                 />
@@ -291,14 +318,14 @@ const Illustration = () => {
             <div className="flex flex-col gap-8">
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc2.png"
+                  src={misc2}
                   alt="Misc 4"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
                 />
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc5.png"
+                  src={misc5}
                   alt="Misc 5"
                   id="photo-misc"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
@@ -306,7 +333,7 @@ const Illustration = () => {
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc7.png"
+                  src={misc7}
                   alt="Misc 3"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
                 />
@@ -316,14 +343,14 @@ const Illustration = () => {
             <div className="flex flex-col gap-8">
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc3.png"
+                  src={misc3}
                   alt="Misc 6"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
                 />
               </figure>
               <figure className="flex flex-col items-center">
                 <img
-                  src="/images/illustrations/20/misc6.png"
+                  src={misc6}
                   alt="Misc 7"
                   className="w-full h-48 object-cover rounded-lg cursor-pointer shadow-md"
                 />
@@ -332,12 +359,7 @@ const Illustration = () => {
           </section>
         </div>
 
-        <Lightbox
-          src={lightboxSrc}
-          onClose={() => {
-            setLightboxSrc(null);
-          }}
-        />
+        <Lightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
       </main>
     </>
   );

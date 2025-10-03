@@ -5,10 +5,18 @@ import Particles from "../../../../components/particles/Particles";
 import VideoPlayer from "../../../../components/videoPlayer/VideoPlayer";
 import ImageCarousel from "../../../../components/imageCarousel/ImageCarousel";
 
+import hotj_bg from "/images/portfolio/heart_of_the_jungle/bg.jpg";
+import owl_img from "/images/portfolio/heart_of_the_jungle/owl.png";
+import hotj_2 from "/images/portfolio/heart_of_the_jungle/2.jpg";
+import hotj_3 from "/images/portfolio/heart_of_the_jungle/3.jpg";
+import hotj_4 from "/images/portfolio/heart_of_the_jungle/4.jpg";
+import hotj_5 from "/images/portfolio/heart_of_the_jungle/5.jpg";
+import hotj_6 from "/images/portfolio/heart_of_the_jungle/6.jpg";
+
 const HeartOfTheJungle = () => {
   return (
     <>
-      <Background imgUrl={"/images/portfolio/heart_of_the_jungle/bg.jpg"} />
+      <Background imgUrl={hotj_bg} />
       <Breadcrumbs
         items={[
           { link: "/", title: "Portfolio" },
@@ -46,7 +54,7 @@ const HeartOfTheJungle = () => {
 
             <div className="w-full lg:w-1/3 pr-0 lg:pl-12 pl-12 lg:pr-12 pr-12 lg:pt-12 pt-2">
               <img
-                src="/images/portfolio/heart_of_the_jungle/owl.png"
+                src={owl_img}
                 alt="Wise owl"
                 className="w-1/2 max-w-xs mx-auto md:w-full md:max-w-full"
               />
@@ -88,15 +96,7 @@ const HeartOfTheJungle = () => {
             </div>
 
             <div className="w-full mx-auto md:w-2/3 lg:pr-10 pr-0 lg:pl-12 pl-0">
-              <ImageCarousel
-                urls={[
-                  "/images/portfolio/heart_of_the_jungle/2.jpg",
-                  "/images/portfolio/heart_of_the_jungle/3.jpg",
-                  "/images/portfolio/heart_of_the_jungle/4.jpg",
-                  "/images/portfolio/heart_of_the_jungle/5.jpg",
-                  "/images/portfolio/heart_of_the_jungle/6.jpg",
-                ]}
-              />
+              <ImageCarousel urls={[hotj_2, hotj_3, hotj_4, hotj_5, hotj_6]} />
             </div>
           </div>
 
